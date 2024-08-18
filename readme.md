@@ -16,10 +16,12 @@ Dengan ada nya bot ini, kita hanya perlu mengscroll satu obrolan saja untuk meli
 
 
 **Install Software ini terlebih dahulu**
+
 - Download python versi 3.12.3 khusus windows [Download di sini](https://www.python.org/downloads/release/python-3123/) Sesuaikan versi os 64 bit atau 32 bit Dan install
 - Download Untuk windows [Download Git di sini](https://git-scm.com/downloads) lalu install.
 
 **Setelah installasi periksa python dengan perintah berikut**
+
 python --version ( enter ) akan muncul versi python
 git --version (enter ) akan muncul versi git
 
@@ -27,15 +29,18 @@ git --version (enter ) akan muncul versi git
 
 
 **Install Pustaka lingkungan virtual pada python desktop, jalankan perintah berikut**
+
 `python -m pip install venv`
 
 Pastikan installasi berhasil, kalau gak berhasil jangan lanjut karena gak akan bisa lanjut tanpa itu.
 
 **Buat akun di my.telegram.org**
+
 Tujuanya untuk mendapatkan app_id dan app_hash, kalau belum paham cara membuat akun di sana bisa refer ke video youtube ini [https://www.youtube.com/watch?v=b3v4iiPHouk](https://www.youtube.com/watch?v=b3v4iiPHouk)
 Catat dan simpan app_id dan app_hash, dan jangan sampai tersebar karena orang lain dapat menggunakanya untuk mengendalikan akun telegram anda.
 
 **BUat akun bot baru di botfather**
+
 Tujuanya untuk mendapatkan kode bot token, penting bot token di sini. Untuk cara membuatnya bisa lihat video berikut ini [https://www.youtube.com/watch?v=zTEzsP6EMww](https://www.youtube.com/watch?v=zTEzsP6EMww)
 Setlah bot jadi jangan lupa kirim pesan /start untuk pertama kali nya ke bot tersebut.
 
@@ -44,6 +49,7 @@ Kalau masih belum dapat ke 3 kode yang sangat krusial tersebut sebaiknya jangan 
 
 
 **Kloning program dan repositori github nya**
+
 Kembali ke CMD tadi kemudian copy paste printah di bawah ini lalu enter.
 `git clone https://github.com/NetzkuOfficial/notif-tg.git`
 
@@ -55,6 +61,7 @@ Arahkan cmd ke folder baru yang sudah di kloning sebelumnya gunakan perintah
 
 
 **Mengedit file penting yang wajib banget**
+
 Pastikan anda menghidupkan tampilkan file tersembunyi pada windows explorer, untuk dapat melihat file .env file ini adalah konfigurasi.
 Masukan app_id, app_hash, nomor hp dengan kode negara, serta bot token ke file ini. Saya sudah menepatkan variabel di dalamnya tinggal isi di samping.
 Setelah mengisi jangan lupa di simpan ....
@@ -63,6 +70,7 @@ Edit kata=kata pada file daftar_id.txt bila lebih dari satu, tambahkan setiap ba
 
 
 **Membuat lingkungan virtual baru**
+
 Khusus windows, balik lagi ke terminal cmd yang sudah terbuka sebelumnya. Ketikan perintah berikut lalu enter....
 `python venv -m venv ryan`
 
@@ -79,6 +87,7 @@ Pastikan berhasil memasuki lingkungan virtual baru, next selanjutnya install sem
 ==== SELESAI KONFIGURASI BERHASIL DI JALANKAN ====
 
 **Menjalankan program**
+
 Ingat pertama kali menjalankan program kamu akan di minta untuk memasukan kode verifikasi yang di kirim oleh telegram ke akun mu. Ini hanya untuk pertama kali saat membuat session telethon yah.
 Saat di jalankan kedua kali, kamu tidak akan di minta untuk kode OTP ataupun password.
 
