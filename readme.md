@@ -22,7 +22,6 @@ Dengan ada nya bot ini, kita hanya perlu mengscroll satu obrolan saja untuk meli
 - Lalu edit address URL tambahkan kata cmd contoh `cmd C:\Users\user\Downloads` Akan terbuka terminal CMD
 - Kemudian ketik perintah `git clone https://github.com/NetzkuOfficial/notif-tele.git` dan tunggu sampe proses kloning selesai.
 - Setelah itu, ketik `cd notif-tele` lalu enter, ini akan memasuki folder target.
-- Perintah selanjutnya ketik `pip install requirements.txt` Tunggu sampai proses installasi selesai yah.
 - Biarkan CMD tetap terbuka, sementara itu ikuti langkah berikut ini
 
 
@@ -32,4 +31,39 @@ Dengan ada nya bot ini, kita hanya perlu mengscroll satu obrolan saja untuk meli
 3. Masuk ke telegram, buat bot baru untuk mendapatkan bot token. Ikuti panduan cara buat bot [https://www.youtube.com/watch?v=zTEzsP6EMww](https://www.youtube.com/watch?v=zTEzsP6EMww)
 4. Tambahkan lagi kode token bot yang di dapatkan pada file .env
 
+**Menjalankan bot dan membuat lingkungan virtual**
+Untuk mencegah agar tidak konflik bila ingin menjalankan lebih dari satu bot dalam satu sistem yang sama kita wajib menggunakan virtual environment.
+Untuk menggunakan virtual environtment, pertama kali banget nih ketika baru install python gitu kamu harus pasang virtual environment Caranya jalankan kode ini di terminal yang sama tadi.
+`python -m pip install venv`
 
+!!Warning, installasi virtual env cukup sekali yah pada devices windows yang sama. Setelah installasi python, git, dan venv gak perlu lagi di install dari awal. Kalau program ke hapus cukup lanjutkan pada tahapan git clone doang di atas.
+
+NEXT : Membuat virtual ENV pada windows dan menginstalll depensi. 
+Ketik `python venv -m venv nama_lingkungan` lalu enter sampai selesai kelaau sudah selesai.
+
+LANJUT : Menginstall paket depensi ke dalam lingkungan virtual 
+Ketik `pip install -r requirements.txt` Tunggu sampai proses installasi selesai yah.
+
+**Menjalankan program**
+Ingat pertama kali menjalankan program kamu akan di minta untuk memasukan kode verifikasi yang di kirim oleh telegram ke akun mu. Ini hanya untuk pertama kali saat membuat session telethon yah.
+Saat di jalankan kedua kali, kamu tidak akan di minta untuk kode OTP ataupun password.
+
+Untuk menjalankan program, kapanpun dan di manapun pada terminal yang sama. Gunakan perintah 
+`python main.py`
+
+Akan di minta memasukan kode verifikasi masukan.
+Akan di minta memasukan password telegram masukan.
+Done bot running......
+
+Agar bot berjalan terus menerus 24 jam non stop mohon jangan di matikan terminal cmd nya, dan jangan matikan PC/desktop windows yah. 
+Atau bisa juga di pasang pada server lain dengan menggunakann deployment di bawah ini.
+
+Untuk menghentikan program pada cmd ketik CTRL + C, program akan berhenti.
+
+
+
+_ Program ini di rancang dengan menggunakan library telegram telethon, 
+dan mempunyai 2 sesi aktif di dalamnya yaitu sesi bot dan sesi pengguna. Bagi akun yang memasnag bot ini, maka program dapat melihat semua pesan yang masuk ke akun telegram kamu namun program ini akan mengabaikanya kecuali pesan yang mengandung kode identifikasi.
+
+Demi keamanan : JANGAN PASANG PRORGAM DI SEMBARANG KOMPUTER DAN JARINGAN. PASANGLAH PROGRAM PADA KOMPUTER DAN JARINGAN YANG BENAR-BENAR TERPERCAYA.
+_
