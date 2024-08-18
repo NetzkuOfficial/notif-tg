@@ -21,7 +21,7 @@ Dengan ada nya bot ini, kita hanya perlu mengscroll satu obrolan saja untuk meli
 - Masuk ke folder manapun di dekstop PC menggunakan Windows Explorer, misal masuk ke folder Downloads
 - Lalu edit address URL tambahkan kata cmd contoh `cmd C:\Users\user\Downloads` Akan terbuka terminal CMD
 - Kemudian ketik perintah `git clone https://github.com/NetzkuOfficial/notif-tele.git` dan tunggu sampe proses kloning selesai.
-- Setelah itu, ketik `cd notif-tele` lalu enter, ini akan memasuki folder target.
+- Setelah itu, ketik `cd notif-tg` lalu enter, ini akan memasuki folder target.
 - Biarkan CMD tetap terbuka, sementara itu ikuti langkah berikut ini
 
 
@@ -30,6 +30,7 @@ Dengan ada nya bot ini, kita hanya perlu mengscroll satu obrolan saja untuk meli
 2. Setelah membuat klik Api development tools salin kode api id, api hash lalu tambahkan di file .env
 3. Masuk ke telegram, buat bot baru untuk mendapatkan bot token. Ikuti panduan cara buat bot [https://www.youtube.com/watch?v=zTEzsP6EMww](https://www.youtube.com/watch?v=zTEzsP6EMww)
 4. Tambahkan lagi kode token bot yang di dapatkan pada file .env
+5. Edit kata kunci yang mau di kloning pesan nya tambahkan per baris pada file daftar_id.txt
 
 **Menjalankan bot dan membuat lingkungan virtual**
 Untuk mencegah agar tidak konflik bila ingin menjalankan lebih dari satu bot dalam satu sistem yang sama kita wajib menggunakan virtual environment.
