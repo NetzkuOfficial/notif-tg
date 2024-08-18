@@ -15,36 +15,68 @@ Fitur pencarian telegram masih memungkinkan untuk memfilter dan mencari data yan
 Dengan ada nya bot ini, kita hanya perlu mengscroll satu obrolan saja untuk melihat daftar teks mana yang di kirimkan dan berisi ID yang identik.
 
 
-**Cara memasang khusus windows**
+**Install Software ini terlebih dahulu**
 - Download python versi 3.12.3 khusus windows [Download di sini](https://www.python.org/downloads/release/python-3123/) Sesuaikan versi os 64 bit atau 32 bit Dan install
-- Download Untuk windows [Download Git di sini](https://git-scm.com/downloads) Dan install
-- Masuk ke folder manapun di dekstop PC menggunakan Windows Explorer, misal masuk ke folder Downloads
-- Lalu edit address URL tambahkan kata cmd contoh `cmd C:\Users\user\Downloads` Akan terbuka terminal CMD
-- Kemudian ketik perintah `git clone https://github.com/NetzkuOfficial/notif-tele.git` dan tunggu sampe proses kloning selesai.
-- Setelah itu, ketik `cd notif-tg` lalu enter, ini akan memasuki folder target.
-- Biarkan CMD tetap terbuka, sementara itu ikuti langkah berikut ini
+- Download Untuk windows [Download Git di sini](https://git-scm.com/downloads) lalu install.
+
+**Setelah installasi periksa python dengan perintah berikut**
+python --version ( enter ) akan muncul versi python
+git --version (enter ) akan muncul versi git
+
+===== JIKA TIDAK MUNCUL VERSION atau PERINTAH TIDAK DI KENALI BERARTI INSTALLSAI GAGAL ATAU TIDAK BENAR ==== 
 
 
-**Edit bagian konfigurasi**
-1. Buka web browser dan masuk ke [my.telegram.org](https://my.telegram.org), masih bingung? bisa tonton panduan https://www.youtube.com/watch?v=b3v4iiPHouk
-2. Setelah membuat klik Api development tools salin kode api id, api hash lalu tambahkan di file .env
-3. Masuk ke telegram, buat bot baru untuk mendapatkan bot token. Ikuti panduan cara buat bot [https://www.youtube.com/watch?v=zTEzsP6EMww](https://www.youtube.com/watch?v=zTEzsP6EMww)
-4. Tambahkan lagi kode token bot yang di dapatkan pada file .env
-5. Edit kata kunci yang mau di kloning pesan nya tambahkan per baris pada file daftar_id.txt
-
-**Menjalankan bot dan membuat lingkungan virtual**
-
-Untuk mencegah agar tidak konflik bila ingin menjalankan lebih dari satu bot dalam satu sistem yang sama kita wajib menggunakan virtual environment.
-Untuk menggunakan virtual environtment, pertama kali banget nih ketika baru install python gitu kamu harus pasang virtual environment Caranya jalankan kode ini di terminal yang sama tadi.
+**Install Pustaka lingkungan virtual pada python desktop, jalankan perintah berikut**
 `python -m pip install venv`
 
-!!Warning, installasi virtual env cukup sekali yah pada devices windows yang sama. Setelah installasi python, git, dan venv gak perlu lagi di install dari awal. Kalau program ke hapus cukup lanjutkan pada tahapan git clone doang di atas.
+Pastikan installasi berhasil, kalau gak berhasil jangan lanjut karena gak akan bisa lanjut tanpa itu.
 
-NEXT : Membuat virtual ENV pada windows dan menginstalll depensi. 
-Ketik `python venv -m venv nama_lingkungan` lalu enter sampai selesai kelaau sudah selesai.
+**Buat akun di my.telegram.org**
+Tujuanya untuk mendapatkan app_id dan app_hash, kalau belum paham cara membuat akun di sana bisa refer ke video youtube ini [https://www.youtube.com/watch?v=b3v4iiPHouk](https://www.youtube.com/watch?v=b3v4iiPHouk)
+Catat dan simpan app_id dan app_hash, dan jangan sampai tersebar karena orang lain dapat menggunakanya untuk mengendalikan akun telegram anda.
 
-LANJUT : Menginstall paket depensi ke dalam lingkungan virtual 
-Ketik `pip install -r requirements.txt` Tunggu sampai proses installasi selesai yah.
+**BUat akun bot baru di botfather**
+Tujuanya untuk mendapatkan kode bot token, penting bot token di sini. Untuk cara membuatnya bisa lihat video berikut ini [https://www.youtube.com/watch?v=zTEzsP6EMww](https://www.youtube.com/watch?v=zTEzsP6EMww)
+Setlah bot jadi jangan lupa kirim pesan /start untuk pertama kali nya ke bot tersebut.
+
+=== DARI HASIL DI ATAS ANDA SUDAH MENDAPATKAN APP_ID, APP_HASH, DAN BOT TOKEN__
+Kalau masih belum dapat ke 3 kode yang sangat krusial tersebut sebaiknya jangan lanjut, selesaikan dulu tahapan itu baru lanjut ke tahap berikutnya. 
+
+
+**Kloning program dan repositori github nya**
+Kembali ke CMD tadi kemudian copy paste printah di bawah ini lalu enter.
+`git clone https://github.com/NetzkuOfficial/notif-tg.git`
+
+Pastikan proses kloning berhasil bukan ERROR, kalau error sebaiknya selesaikan dulu proses kloning dan permasalahanya.
+Kalau sudah berhasil maka bisa lanjut ke tahap berikutnya.
+
+Arahkan cmd ke folder baru yang sudah di kloning sebelumnya gunakan perintah 
+`cd notif-tg` enter untuk menjalankan.
+
+
+**Mengedit file penting yang wajib banget**
+Pastikan anda menghidupkan tampilkan file tersembunyi pada windows explorer, untuk dapat melihat file .env file ini adalah konfigurasi.
+Masukan app_id, app_hash, nomor hp dengan kode negara, serta bot token ke file ini. Saya sudah menepatkan variabel di dalamnya tinggal isi di samping.
+Setelah mengisi jangan lupa di simpan ....
+
+Edit kata=kata pada file daftar_id.txt bila lebih dari satu, tambahkan setiap baris untuk membantu susunanya.
+
+
+**Membuat lingkungan virtual baru**
+Khusus windows, balik lagi ke terminal cmd yang sudah terbuka sebelumnya. Ketikan perintah berikut lalu enter....
+`python venv -m venv ryan`
+
+Tunggu 10 detik atau 50 detik maka lingkungan virtual baru akan berhasil di baut, jika ada error silakan di periksa dulu  dan perbaiki.
+Ingat gak bisa lanjut kalau error. Ganti nama ryan dengan nama lingkungan anda sendiri.
+
+Kemudian jalankan lingkungan tersebut dengan mengetik 
+`\ryan\Scripts\Activate`
+
+Pastikan berhasil memasuki lingkungan virtual baru, next selanjutnya install semu defensi pada file requiremets.txt kode installasi berikut ini.
+`python venv -m venv nama_lingkungan`
+
+
+==== SELESAI KONFIGURASI BERHASIL DI JALANKAN ====
 
 **Menjalankan program**
 Ingat pertama kali menjalankan program kamu akan di minta untuk memasukan kode verifikasi yang di kirim oleh telegram ke akun mu. Ini hanya untuk pertama kali saat membuat session telethon yah.
