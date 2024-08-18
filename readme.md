@@ -57,14 +57,12 @@ Akan di minta memasukan password telegram masukan.
 Done bot running......
 
 Agar bot berjalan terus menerus 24 jam non stop mohon jangan di matikan terminal cmd nya, dan jangan matikan PC/desktop windows yah. 
-Atau bisa juga di pasang pada server lain dengan menggunakann deployment di bawah ini.
+Atau bisa juga di pasang pada server lain usahakan server yang trusted, kalau mau aman bikin sendiri server nya pake STB bekas buat kantor.
 
 Untuk menghentikan program pada cmd ketik CTRL + C, program akan berhenti.
 
 
 
-_ Program ini di rancang dengan menggunakan library telegram telethon, 
-dan mempunyai 2 sesi aktif di dalamnya yaitu sesi bot dan sesi pengguna. Bagi akun yang memasnag bot ini, maka program dapat melihat semua pesan yang masuk ke akun telegram kamu namun program ini akan mengabaikanya kecuali pesan yang mengandung kode identifikasi.
+__Program ini di rancang dengan menggunakan library telegram telethon, 
+dan mempunyai 2 sesi aktif di dalamnya yaitu sesi bot dan sesi pengguna. Bagi akun yang memasnag bot ini, maka program dapat melihat semua pesan yang masuk ke akun telegram kamu namun program ini akan mengabaikanya kecuali pesan yang mengandung kode identifikasi._
 
-Demi keamanan : JANGAN PASANG PRORGAM DI SEMBARANG KOMPUTER DAN JARINGAN. PASANGLAH PROGRAM PADA KOMPUTER DAN JARINGAN YANG BENAR-BENAR TERPERCAYA.
-_
