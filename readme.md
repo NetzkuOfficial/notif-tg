@@ -26,7 +26,7 @@ Dengan ada nya bot ini, kita hanya perlu mengscroll satu obrolan saja untuk meli
 
 
 **Edit bagian konfigurasi**
-1. Buka web browser dan masuk ke [my.telegram.org](https://my.telegram.org) buat sebuah apps baru, pilih nama bebas, jenis apps nya web apps.
+1. Buka web browser dan masuk ke [my.telegram.org](https://my.telegram.org), masih bingung? bisa tonton panduan https://www.youtube.com/watch?v=b3v4iiPHouk
 2. Setelah membuat klik Api development tools salin kode api id, api hash lalu tambahkan di file .env
 3. Masuk ke telegram, buat bot baru untuk mendapatkan bot token. Ikuti panduan cara buat bot [https://www.youtube.com/watch?v=zTEzsP6EMww](https://www.youtube.com/watch?v=zTEzsP6EMww)
 4. Tambahkan lagi kode token bot yang di dapatkan pada file .env
