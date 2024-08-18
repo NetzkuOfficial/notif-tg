@@ -33,6 +33,7 @@ Dengan ada nya bot ini, kita hanya perlu mengscroll satu obrolan saja untuk meli
 5. Edit kata kunci yang mau di kloning pesan nya tambahkan per baris pada file daftar_id.txt
 
 **Menjalankan bot dan membuat lingkungan virtual**
+
 Untuk mencegah agar tidak konflik bila ingin menjalankan lebih dari satu bot dalam satu sistem yang sama kita wajib menggunakan virtual environment.
 Untuk menggunakan virtual environtment, pertama kali banget nih ketika baru install python gitu kamu harus pasang virtual environment Caranya jalankan kode ini di terminal yang sama tadi.
 `python -m pip install venv`
