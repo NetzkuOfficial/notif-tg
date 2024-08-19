@@ -17,129 +17,75 @@ Fitur pencarian telegram masih memungkinkan untuk memfilter dan mencari data yan
 Dengan ada nya bot ini, kita hanya perlu mengscroll satu obrolan saja untuk melihat daftar teks mana yang di kirimkan dan berisi ID yang identik.
 
 
-**Install Software ini terlebih dahulu**
 
-- Download python versi 3.12.3 khusus windows [Download di sini](https://www.python.org/downloads/release/python-3123/) Sesuaikan versi os 64 bit atau 32 bit Dan install
-- Download Untuk windows [Download Git di sini](https://git-scm.com/downloads) lalu install. ( TANPA GIT HARUS DOWNLOAD FILE ZIP )
+**Persyaratan**
 
-**Setelah installasi periksa python dengan perintah berikut**
+Membutuhkan python versi 3.12.3, bisa di pasang untuk windows, linux, maupun Mac Os.
 
-python --version ( enter ) akan muncul versi python
-git --version (enter ) akan muncul versi git
+[Download Python](https://www.python.org/downloads/release/python-3123/)
 
-===== JIKA TIDAK MUNCUL VERSION atau PERINTAH TIDAK DI KENALI BERARTI INSTALLSAI GAGAL ATAU TIDAK BENAR ==== 
+Membutuhkan version control git, digunakan untuk mengkloning project ke folder produksi, atau bisa unduh file zip repositori ini secara manual.
 
-
-**Install Pustaka lingkungan virtual pada python desktop, jalankan perintah berikut**
-`pip install virtualenv`
-
-Pastikan installasi berhasil, kalau gak berhasil jangan lanjut karena gak akan bisa lanjut tanpa itu.
+[Download GIT di sini(https://git-scm.com/downloads) lalu install. ( TANPA GIT HARUS DOWNLOAD FILE ZIP )
 
 
+Checking, pastikan perintah ini bisa di jalankan di terminal setelah installasi.
+
+``python --version
+dan perintah
+git --version``
 
 
-
-
+Jika baru install Python, wajib menginstall pustaka virtual ENV. Jalankan perintah ini di terminal untuk menginstall env.
+``pip install virtualenv``
 
 
 
-**Buat akun di my.telegram.org**
-
-Tujuanya untuk mendapatkan app_id dan app_hash, kalau belum paham cara membuat akun di sana bisa refer ke video youtube ini [https://www.youtube.com/watch?v=b3v4iiPHouk](https://www.youtube.com/watch?v=b3v4iiPHouk)
-Catat dan simpan app_id dan app_hash, dan jangan sampai tersebar karena orang lain dapat menggunakanya untuk mengendalikan akun telegram anda.
-.
-.
-.
-.
-
-**Buat akun bot baru di botfather**
-
-Tujuanya untuk mendapatkan kode bot token, penting bot token di sini. Untuk cara membuatnya bisa lihat video berikut ini [https://www.youtube.com/watch?v=zTEzsP6EMww](https://www.youtube.com/watch?v=zTEzsP6EMww)
-Setlah bot jadi jangan lupa kirim pesan /start untuk pertama kali nya ke bot tersebut.
-
-=== DARI HASIL DI ATAS ANDA SUDAH MENDAPATKAN APP_ID, APP_HASH, DAN BOT TOKEN__
-Kalau masih belum dapat ke 3 kode yang sangat krusial tersebut sebaiknya jangan lanjut, selesaikan dulu tahapan itu baru lanjut ke tahap berikutnya. 
-.
-.
-.
-
-**Kloning program dan repositori github nya**
-
-Kembali ke CMD tadi kemudian copy paste printah di bawah ini lalu enter.
-`git clone https://github.com/NetzkuOfficial/notif-tg.git`
-
-JIKA SUDAH PUNYA FILE ZIP NYA GAK PRELU DI KLONING LAGI.
-
-Pastikan proses kloning berhasil bukan ERROR, kalau error sebaiknya selesaikan dulu proses kloning dan permasalahanya.
-Kalau sudah berhasil maka bisa lanjut ke tahap berikutnya.
-
-Arahkan cmd ke folder baru yang sudah di kloning sebelumnya gunakan perintah 
-`cd notif-tg` enter untuk menjalankan.
-.
-.
-.
 
 
-JIKA SUDAH PUNYA FILE NYA...
--Extrax dalam sebuah folder
--Masuk ke Folder tersebut dengan windows explorer
--Habis itu address nya di depan tambahkan teks cmd
-.
-.
-.
-.
+**Salin file ke folder produksi atau bisa download manual**
+
+``git clone https://github.com/NetzkuOfficial/notif-tg.git``
 
 
 
-**Mengedit file penting yang wajib banget**
 
-Pastikan anda menghidupkan tampilkan file tersembunyi pada windows explorer, untuk dapat melihat file .env file ini adalah konfigurasi.
-Masukan app_id, app_hash, nomor hp dengan kode negara, serta bot token ke file ini. Saya sudah menepatkan variabel di dalamnya tinggal isi di samping.
-Setelah mengisi jangan lupa di simpan ....
-
-Edit kata=kata pada file daftar_id.txt bila lebih dari satu, tambahkan setiap baris untuk membantu susunanya.
-
-.
-.
-.
-.
-
-**Membuat lingkungan virtual baru**
-
-Khusus windows, balik lagi ke terminal cmd yang sudah terbuka sebelumnya. Ketikan perintah berikut lalu enter....
-`python -m venv ryan`
-
-Tunggu 10 detik atau 50 detik maka lingkungan virtual baru akan berhasil di baut, jika ada error silakan di periksa dulu  dan perbaiki.
-Ingat gak bisa lanjut kalau error. Ganti nama ryan dengan nama lingkungan anda sendiri.
-
-Kemudian jalankan lingkungan tersebut dengan mengetik 
-`\ryan\Scripts\Activate`
-
-Pastikan berhasil memasuki lingkungan virtual baru, next selanjutnya install semu defensi pada file requiremets.txt kode installasi berikut ini.
-`pip install -r requirements.txt`
-.
-.
-.
+- Jangan lupa edit bagian daftar_id.txt 
+- Tambahkan semua kredensial telegram di file .env
 
 
-==== SELESAI KONFIGURASI BERHASIL DI JALANKAN ====
+**Cara mendapatkan app_id dan app_has** 
 
-**Menjalankan program**
+[https://www.youtube.com/watch?v=b3v4iiPHouk](https://www.youtube.com/watch?v=b3v4iiPHouk)
 
-Ingat pertama kali menjalankan program kamu akan di minta untuk memasukan kode verifikasi yang di kirim oleh telegram ke akun mu. Ini hanya untuk pertama kali saat membuat session telethon yah.
-Saat di jalankan kedua kali, kamu tidak akan di minta untuk kode OTP ataupun password.
+*Cara mendapatkann token telegram baru**
 
-Untuk menjalankan program, kapanpun dan di manapun pada terminal yang sama. Gunakan perintah 
-`python main.py`
+[https://www.youtube.com/watch?v=zTEzsP6EMww](https://www.youtube.com/watch?v=zTEzsP6EMww)
 
-Akan di minta memasukan kode verifikasi masukan.
-Akan di minta memasukan password telegram masukan.
-Done bot running......
 
-Agar bot berjalan terus menerus 24 jam non stop mohon jangan di matikan terminal cmd nya, dan jangan matikan PC/desktop windows yah. 
-Atau bisa juga di pasang pada server lain usahakan server yang trusted, kalau mau aman bikin sendiri server nya pake STB bekas buat kantor.
+**Pastikan terminal sudah masuk ke folder proyek**
 
-Untuk menghentikan program pada cmd ketik CTRL + C, program akan berhenti.
+``python -m venv ryan-id``
+
+``ryan-id\Scripts\Activate``
+
+``pip install -r requirements.txt``
+
+``python main.py``
+
+Masukan kode verifikasi yang di kirim ke telegram anda.
+Masukan password telegram anda jika ada.
+Bot running......
+Untuk menghentikan bot telegram, pada terminal ketik CTRL + C...
+
+
+Untuk menjalankan ulang program:
+Masuk ke directory produksi sebelumnya, edit address tambahkann cmd di depan nya lalu enter.
+
+
+``ryan-id\Scripts\Activate``
+
+``python main.py``
 
 
 _Program ini di rancang dengan menggunakan library telegram telethon, 
