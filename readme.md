@@ -7,9 +7,11 @@ Ketika ada pesan masuk ke akun kita yang mengandung minimal 1 baris id filter ma
 Tujuan yang ingin di capai adalah untuk mendapatakn notifikasi alert apabila ada seorang, grup, maupun channel mengirimkan pesan dengan  di sertai ID filter.
 Akun telegram kita juga akan menerima notifikasi, serta pesan tersebut melalui bot telegram. 
 
+
 Cara ini lebih efektif untuk mendapatkan semua jenis pesan masuk yang mengandung sebuah kata daripada harus mencari nya di berbagai obrolan. 
 Saat ini telegram merupakan aplikasi dengan jumlah list obrolan terbanyak yang pernah ada, dan ada ribuan pesan per hari di broadcast oleh grup/channel.
 Kita yang hanya ingin mengambil/melihat pesan tertentu akan kesulitan mencari nya karena tertimpa oleh pesan lain..
+
 
 Fitur pencarian telegram masih memungkinkan untuk memfilter dan mencari data yang tepat, akan tetapi keluar masuk setiap obrolan masih menjadi sebuah kerumitan.
 Dengan ada nya bot ini, kita hanya perlu mengscroll satu obrolan saja untuk melihat daftar teks mana yang di kirimkan dan berisi ID yang identik.
