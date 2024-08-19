@@ -26,17 +26,20 @@ Membutuhkan python versi 3.12.3, bisa di pasang untuk windows, linux, maupun Mac
 
 Membutuhkan version control git, digunakan untuk mengkloning project ke folder produksi, atau bisa unduh file zip repositori ini secara manual.
 
-[Download GIT di sini(https://git-scm.com/downloads) lalu install. ( TANPA GIT HARUS DOWNLOAD FILE ZIP )
+[Download GIT di sini](https://git-scm.com/downloads) lalu install. ( TANPA GIT HARUS DOWNLOAD FILE ZIP )
 
 
 Checking, pastikan perintah ini bisa di jalankan di terminal setelah installasi.
 
-``python --version
+``python --version``
+
 dan perintah
-git --version``
+
+``git --version``
 
 
 Jika baru install Python, wajib menginstall pustaka virtual ENV. Jalankan perintah ini di terminal untuk menginstall env.
+
 ``pip install virtualenv``
 
 
@@ -58,7 +61,7 @@ Jika baru install Python, wajib menginstall pustaka virtual ENV. Jalankan perint
 
 [https://www.youtube.com/watch?v=b3v4iiPHouk](https://www.youtube.com/watch?v=b3v4iiPHouk)
 
-*Cara mendapatkann token telegram baru**
+**Cara mendapatkann token telegram baru**
 
 [https://www.youtube.com/watch?v=zTEzsP6EMww](https://www.youtube.com/watch?v=zTEzsP6EMww)
 
@@ -90,4 +93,10 @@ Masuk ke directory produksi sebelumnya, edit address tambahkann cmd di depan nya
 
 _Program ini di rancang dengan menggunakan library telegram telethon, 
 dan mempunyai 2 sesi aktif di dalamnya yaitu sesi bot dan sesi pengguna. Bagi akun yang memasnag bot ini, maka program dapat melihat semua pesan yang masuk ke akun telegram kamu namun program ini akan mengabaikanya kecuali pesan yang mengandung kode identifikasi._
+
+
+**Insatall Di PC pribadi atau gunakan STB jadikan server, jika membutuhkan server online siap pakai tanpa perlu repot. Bisa contact saya di telegram @ryanid, 1 sesi server harganya 5$ aja, biaya jasa cukup 50rb. Makaksih, semoga bot nya running.**
+
+
+
 
