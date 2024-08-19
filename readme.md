@@ -104,7 +104,9 @@ Atau bisa juga di pasang pada server lain usahakan server yang trusted, kalau ma
 Untuk menghentikan program pada cmd ketik CTRL + C, program akan berhenti.
 
 
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import/project?template=https://github.com/NetzkuOfficial/notif-tg)
 
-__Program ini di rancang dengan menggunakan library telegram telethon, 
+
+_Program ini di rancang dengan menggunakan library telegram telethon, 
 dan mempunyai 2 sesi aktif di dalamnya yaitu sesi bot dan sesi pengguna. Bagi akun yang memasnag bot ini, maka program dapat melihat semua pesan yang masuk ke akun telegram kamu namun program ini akan mengabaikanya kecuali pesan yang mengandung kode identifikasi._
 
